@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { styled } from '@mui/material/styles';
+import { makeStyles, styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
@@ -7,6 +7,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import Button from '@mui/material/Button';
+import { red } from '@mui/material/colors';
+
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -29,7 +32,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }));
 
 
-
 function Mtable() {
 
 const [fornecedores, setFornecedores] = useState([]);
@@ -44,6 +46,8 @@ useEffect(() => {
 
 
   return (
+    <div>
+     <h1 className='header'>Lista de Forncedores</h1>
     <TableContainer component={Paper}>
     <Table sx={{ minWidth: 1000}} aria-label="customized table">
       <TableHead>
@@ -51,8 +55,9 @@ useEffect(() => {
           <StyledTableCell>Nome</StyledTableCell>
           <StyledTableCell align="right">Pais</StyledTableCell>
           <StyledTableCell align="right">Estado</StyledTableCell>
-          <StyledTableCell align="right">Telefone)</StyledTableCell>
+          <StyledTableCell align="right">Telefone</StyledTableCell>
           <StyledTableCell align="right">Ramo</StyledTableCell>
+          <StyledTableCell align="right">Status</StyledTableCell>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -65,13 +70,26 @@ useEffect(() => {
           <StyledTableCell align="right">{fornecedor.estado}</StyledTableCell>
           <StyledTableCell align="right">{fornecedor.telefone}</StyledTableCell>
           <StyledTableCell align="right">{fornecedor.ramo}</StyledTableCell>
+          <StyledTableCell align="right"><Button color='inherit'   style={{
+             color: 'White',  
+             backgroundColor:
+             ((fornecedor.status === 'Ativo' && 'green')) ||
+             (fornecedor.status === 'Inativo' && 'red')
+            }}
+            >
+            {fornecedor.status}
+          </Button></StyledTableCell>
+     
+
         </StyledTableRow>
       ))}
       </TableBody>
     </Table>
   </TableContainer>
+  </div>
  );
 }
+
   
     
 
