@@ -7,7 +7,7 @@ const url = 'http://localhost:3000/fornecedores';
 
 
 useEffect(() => {
-    fetch(url)
+    fetch("http://localhost:3000/fornecedores")
     .then(response  => response.json())
     .then(data => {
       setFornecedores(data)  
