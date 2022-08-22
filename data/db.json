@@ -2,51 +2,51 @@
     "fornecedores": [
       {
         "id": 1,
-        "name": "Supermix",
-        "pais": "Brasil",
-        "Estado": "Rio grande do sul",
-        "Telefone": "51 99388-7777",
-        "Ramo":  "Atacado"
+        "name":"Supermix",
+        "pais":"Brasil",
+        "estado":"Rio grande do sul",
+        "telefone":"51 99388-7777",
+        "ramo":  "Atacado"
       },
       {
         "id": 2,
-        "name": "Mandeco",
-        "pais": "Brasil",
-        "Estado": "Rio da Janeiro",
-        "Telefone": " 21 99388-7777",
-        "Ramo":  "Eventos"
+        "name":"Mandeco",
+        "pais":"Brasil",
+        "estado":"Rio da Janeiro",
+        "telefone":"21 99388-7777",
+        "ramo":"Eventos"
       },
       {
         "id": 3,
-        "name": "Hotel nem",
-        "pais": "Brasil",
-        "Estado": "São Paulo",
-        "Telefone": "11 99388-7777",
-        "Ramo":  "Hotelaria"
+        "name":"Hotel nem",
+        "pais":"Brasil",
+        "estado":"São Paulo",
+        "telefone":"11 99388-7777",
+        "ramo":"Hotelaria"
       },
       {
-        "id": 4,
-        "name": "Martim metal",
-        "pais": "Brasil",
-        "Estado": "Santa Catarina",
-        "Telefone": "47 99388-7777",
-        "Ramo":  "Metalurgica"
+        "id":4,
+        "name":"Martim metal",
+        "pais":"Brasil",
+        "estado":"Santa Catarina",
+        "telefone":"47 99388-7777",
+        "ramo":"Metalurgica"
       },
       {
-        "id": 5,
-        "name": "Souza log",
-        "pais": "Brasil",
-        "Estado": "São Paulo",
-        "Telefone": "11 99388-7777",
-        "Ramo":  "Logistica"
+        "id":5,
+        "name":"Souza log",
+        "pais":"Brasil",
+        "estado":"São Paulo",
+        "telefone":"11 99388-7777",
+        "ramo":"Logistica"
       },
       {
-        "id": 6,
-        "name": "Frumor",
-        "pais": "Brasil",
-        "Estado": "Rio grande do sul",
-        "Telefone": "51 99388-7777",
-        "Ramo":  "Comércio"
+        "id":6,
+        "name":"Frumor",
+        "pais":"Brasil",
+        "estado":"Rio grande do sul",
+        "telefone":"51 99388-7777",
+        "ramo":"Comércio"
       }
     
     ]
