@@ -1,0 +1,23 @@
+.btn { 
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.btn-ativo {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color:white;
+}
+
+.btn-inativo {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+
