@@ -13,7 +13,6 @@ const  [botaoInativo, setBotaoInativo] = useState(false);
 
 const inativarBotao = () => {
   setBotaoInativo(!botaoInativo)
-
 }
 
   return (

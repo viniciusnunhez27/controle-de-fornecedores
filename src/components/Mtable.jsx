@@ -11,8 +11,6 @@ import Paper from '@mui/material/Paper';
 
 
 
-
-
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
     backgroundColor: theme.palette.common.black,
@@ -33,15 +31,9 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-
-
-
 function Mtable() {
 
 const [fornecedores, setFornecedores] = useState([]);
-
-
-  
 
 useEffect(() => {
     fetch("http://localhost:3000/fornecedores")
@@ -56,15 +48,15 @@ useEffect(() => {
     <div>
      <h1 className='header'>Lista de Fornecedores</h1>
     <TableContainer component={Paper}>
-    <Table sx={{ minWidth: 1000}} aria-label="customized table">
+    <Table sm={{ minWidth: 1000}} aria-label="customized table">
       <TableHead>
         <TableRow>
           <StyledTableCell>Nome</StyledTableCell>
-          <StyledTableCell align="right">Pais</StyledTableCell>
-          <StyledTableCell align="right">Estado</StyledTableCell>
-          <StyledTableCell align="right">Telefone</StyledTableCell>
-          <StyledTableCell align="right">Ramo</StyledTableCell>
-          <StyledTableCell align="right">Status</StyledTableCell>
+          <StyledTableCell align="center">Pais</StyledTableCell>
+          <StyledTableCell align="center">Estado</StyledTableCell>
+          <StyledTableCell align="center">Telefone</StyledTableCell>
+          <StyledTableCell align="center">Ramo</StyledTableCell>
+          <StyledTableCell align="center">Status</StyledTableCell>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -73,14 +65,13 @@ useEffect(() => {
           <StyledTableCell component="th" scope="row">
           {fornecedor.name}
           </StyledTableCell>
-          <StyledTableCell align="right">{fornecedor.pais}</StyledTableCell>
-          <StyledTableCell align="right">{fornecedor.estado}</StyledTableCell>
-          <StyledTableCell align="right">{fornecedor.telefone}</StyledTableCell>
-          <StyledTableCell align="right">{fornecedor.ramo}</StyledTableCell>
-          <StyledTableCell align="right"> 
+          <StyledTableCell align="center">{fornecedor.pais}</StyledTableCell>
+          <StyledTableCell align="center">{fornecedor.estado}</StyledTableCell>
+          <StyledTableCell align="center">{fornecedor.telefone}</StyledTableCell>
+          <StyledTableCell align="center">{fornecedor.ramo}</StyledTableCell>
+          <StyledTableCell align="center"> 
            <Button text={fornecedor.status}/>
           </StyledTableCell>
-     
         </StyledTableRow>
       ))}
       </TableBody>
