@@ -1,12 +1,10 @@
-import Mtable from './components/Mtable';
-import './App.css';
+import MTable from "./components/MTable/Mtable";
+
 
 
 function App() {
   return (
-    
-      <Mtable/>
-
+     <MTable />
   );
 }
 
