@@ -16,7 +16,7 @@ const inativarBotao = () => {
   return (
     <div>
          <button className='btn' data-active={statusFornecedor} onClick={inativarBotao} >
-         {statusFornecedor? 'Ativo': 'Inativo'}   
+         {statusFornecedor ? 'Ativo': 'Inativo'}   
         </button>
     </div>
   )
